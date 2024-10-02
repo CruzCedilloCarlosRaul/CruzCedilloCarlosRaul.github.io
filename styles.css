@@ -1,0 +1,211 @@
+/* General */ 
+body {
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Fondo oscuro para un efecto futurista */
+    color: #e0e0e0; /* Texto claro */
+}
+
+header {
+    background: linear-gradient(90deg, rgba(0, 204, 255, 1), rgba(0, 128, 255, 1)); /* Gradiente azul */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada */
+}
+
+header .logo img {
+    width: 120px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px; /* Tamaño de fuente aumentado */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Dorado */
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.7); /* Sombra dorada */
+}
+
+.hero {
+    background: url('stadium.jpg') no-repeat center center/cover;
+    height: 450px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 255, 0.5);
+}
+
+.hero h1 {
+    font-size: 64px; /* Tamaño de fuente mayor */
+    margin: 0;
+    text-shadow: 3px 3px 20px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+    font-size: 28px;
+    margin-top: 10px;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+main {
+    padding: 40px;
+    background-color: #1e1e1e; /* Fondo más oscuro */
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    color: #00ccff; /* Azul brillante */
+    font-size: 36px;
+    border-bottom: 4px solid #00ccff;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.team-card {
+    background-color: #292929; /* Fondo oscuro para las tarjetas */
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s, box-shadow 0.3s; /* Añadido efecto de sombra */
+}
+
+.team-card:hover {
+    transform: translateY(-10px); /* Efecto de elevación */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8); /* Efecto de sombra al pasar el ratón */
+}
+
+.team-card img {
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.standings table, .top-scorers table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.standings table th, .standings table td, 
+.top-scorers table th, .top-scorers table td {
+    border: 1px solid #444; /* Bordes oscuros */
+    padding: 14px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.standings table th, .top-scorers table th {
+    background-color: #00ccff; /* Azul brillante */
+    color: white;
+    font-size: 18px;
+}
+
+.standings table tbody tr:nth-child(odd),
+.top-scorers table tbody tr:nth-child(odd) {
+    background-color: #1c1c1c; /* Fondo oscuro */
+}
+
+.standings table tbody tr:hover, 
+.top-scorers table tbody tr:hover {
+    background-color: #333333; /* Fondo más claro al pasar el ratón */
+}
+
+footer {
+    background: linear-gradient(90deg, rgba(0, 204, 255, 1), rgba(0, 128, 255, 1));
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Estilos para la sección de resultados por jornadas */
+.results {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.results h2 {
+    text-align: center;
+    color: #00ccff;
+    font-size: 28px;
+}
+
+.results h3 {
+    color: #004d99;
+    font-size: 22px;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.jornada-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: center;
+    background-color: #1e1e1e;
+}
+
+.jornada-table th, .jornada-table td {
+    padding: 12px 15px;
+}
+
+.jornada-table th {
+    background-color: #00ccff;
+    color: white;
+}
+
+.jornada-table tr {
+    border-bottom: 1px solid #444;
+}
+
+.jornada-table tr:nth-of-type(even) {
+    background-color: #292929;
+}
+
+.jornada-table tr:last-of-type {
+    border-bottom: 2px solid #00ccff;
+}
+
+.jornada-table td {
+    font-weight: 300;
+}
+
+.jornada-table th {
+    font-weight: 500;
+    text-transform: uppercase;
+}

@@ -1,0 +1,318 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liga de Futbol MEXA</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos adicionales para el título y patrocinadores */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .title {
+            flex: 1;
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            color: whitesmoke;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .sponsors {
+            display: flex;
+            justify-content: space-between;
+            width: 300px;
+        }
+
+        .sponsors img {
+            width: 200px;
+            height: auto;
+        }
+
+        nav {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            display: inline-flex;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        section {
+            margin: 20px 0;
+        }
+
+        .news {
+            text-align: center;
+        }
+
+        .news video {
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .news .image-container {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .news img {
+            max-width: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="sponsors">
+            <img src="img/sponsor1.png" alt="Patrocinador 1">
+            <img src="img/sponsor2.png" alt="Patrocinador 2">
+        </div>
+        <div class="title">
+            Liga MEXA Profesional de Fútbol
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Equipos</a></li>
+            <li><a href="#">Tabla General</a></li>
+            <li><a href="#">Goleadores</a></li>
+            <li><a href="#">Resultados</a></li>
+            <li><a href="#">Noticias</a></li>
+            <li><a href="#">Calendario</a></li>
+            <li><a href="#">Estadísticas</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="teams">
+            <h2>Equipos de la Liga MEXA</h2>
+            <div class="team-grid">
+                <div class='team-card'>
+                    <img src='img/america.png' alt='America'><h3>America</h3></div>
+                <div class='team-card'>
+                    <img src='img/chivas.png' alt='Chivas'><h3>Chivas</h3></div>
+                <div class='team-card'>
+                    <img src='img/tigres.png' alt='Tigres'><h3>Tigres</h3></div>
+                <div class='team-card'>
+                    <img src='img/pumas.png' alt='Pumas'><h3>Pumas</h3></div>
+                <div class='team-card'>
+                    <img src='img/monterrey.png' alt='Monterrey'><h3>Monterrey</h3></div>
+                <div class='team-card'>
+                    <img src='img/leon.png' alt='León'><h3>León</h3></div>
+                <div class='team-card'>
+                    <img src='img/santos.png' alt='Santos'><h3>Santos</h3></div>
+                <div class='team-card'>
+                    <img src='img/cruzazul.png' alt='Cruz Azul'><h3>Cruz Azul</h3></div>
+                <div class='team-card'>
+                    <img src='img/toluca.png' alt='Toluca'><h3>Toluca</h3></div>
+                <div class='team-card'>
+                    <img src='img/pachuca.png' alt='Pachuca'><h3>Pachuca</h3></div>
+            </div>
+        </section>
+
+        <section class="top-scorers">
+            <h2>Goleadores</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Jugador</th>
+                        <th>Equipo</th>
+                        <th>Goles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Henry Martin</td>
+                        <td>America</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Paulinho</td>
+                        <td>Toluca</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Oussama Idrissi</td>
+                        <td>Pachuca</td>
+                        <td>2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="results">
+            <h2>Resultados por Jornada</h2>
+            <h3>Jornada 1</h3>
+            <table class='jornada-table'>
+                <thead>
+                    <tr>
+                        <th>Equipo Local</th>
+                        <th>Goles Local</th>
+                        <th>Equipo Visitante</th>
+                        <th>Goles Visitante</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>America</td>
+                        <td>4</td>
+                        <td>Chivas</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Pachuca</td>
+                        <td>3</td>
+                        <td>Toluca</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Jornada 2</h3>
+            <table class='jornada-table'>
+                <thead>
+                    <tr>
+                        <th>Equipo Local</th>
+                        <th>Goles Local</th>
+                        <th>Equipo Visitante</th>
+                        <th>Goles Visitante</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tigres</td>
+                        <td>0</td>
+                        <td>Leon</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Cruz azul</td>
+                        <td>0</td>
+                        <td>Monterrey</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="standings">
+            <h2>Tabla General</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Equipo</th>
+                        <th>PJ</th>
+                        <th>PG</th>
+                        <th>PE</th>
+                        <th>PP</th>
+                        <th>GF</th>
+                        <th>GC</th>
+                        <th>DIF</th>
+                        <th>Puntos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>America</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>+3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Chivas</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>4</td>
+                        <td>-3</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="news">
+            <h2>Últimas Noticias</h2>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2HU-fi29-OY?si=fqd3Q_urGfhvW_pS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>PUMAS LE PEGA AL CLUB AMERICA, VA A SUFRIR PARA ENTRAR A LIGUILLA</p>
+                
+            </div>
+            <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KrD1t9bXVV0?si=4oi9CNHvMvoUKmt-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>CRUZ AZUL SUPERLIDER</p>
+
+            </div>
+            <div class="image-container">
+                <img src="img/noticia1.jpg" alt="Noticia 1">
+                <p>ESPANTOSA LESIÓN DEL HOBBIT BERMUDEZ</p>
+            </div>
+            <div class="image-container">
+                <img src="img/noticia2.jpeg" alt="Noticia 2">
+                <p>CONVOCADOS SELECCION MEXICANA</p>
+            </div>
+            <div class="image-container">
+                <img src="img/noticia3.jpg" alt="Noticia 3">
+                <p>CRUZ AZUL, LIDER DEL TORNEO</p>
+            </div>  
+            
+            <div>
+                <div class="social-icons">
+                    <a href="https://mail.google.com/" target="_blank">
+                        <img src="img/gmail.png" alt="Gmail">
+                    </a>
+                    <a href="https://www.tiktok.com/" target="_blank">
+                        <img src="img/tiktok.png" alt="TikTok">
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <img src="img/youtube.png" alt="YouTube">
+                    </a>
+                </div>
+            </div>
+            
+            <style>
+                .social-icons {
+                    display: flex;
+                    justify-content: center;
+                    margin: 20px 0;
+                }
+            
+                .social-icons a {
+                    margin: 0 10px;
+                    text-decoration: none;
+                }
+            
+                .social-icons img {
+                    width: 60px; /* Tamaño uniforme para todos los íconos */
+                    height: 60px;
+                    object-fit: contain; /* Asegura que los íconos se ajusten al contenedor */
+                }
+            </style>
+            
+
+        </section>
+    </main>
+</body>
+</html>
